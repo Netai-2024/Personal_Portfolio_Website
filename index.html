@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Netai Jana Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- scroll animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<!-- Sidebar design -->
+<body>
+    
+    <div class="nav-section">
+
+        <div class="nav-header">
+            <span>Portfolio</span>
+            <i class="fa-solid fa-bars" id="active-btn"></i>
+        </div>
+
+        <div class="nav-main">
+            <img src="nav-image.png" alt="Profile Picture">
+            <div>
+                <p>NETAI JANA</p>
+                <p>Full Stack Developer</p>
+            </div>
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="#home" class="active-section">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="nav-item">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+
+            <li>
+                <a href="#about">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="nav-item">About</span>
+                </a>
+                <span class="tooltip">About</span>
+            </li>
+
+            <li>
+                <a href="#education">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span class="nav-item">Education</span>
+                </a>
+                <span class="tooltip">Education</span>
+            </li>
+
+            <li>
+                <a href="#experience">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <span class="nav-item">Experience</span>
+                </a>
+                <span class="tooltip">Experience</span>
+            </li>
+
+            <li>
+                <a href="#skills">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <span class="nav-item">Skills</span>
+                </a>
+                <span class="tooltip">Skills</span>
+            </li>
+
+            <li>
+                <a href="#project">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <span class="nav-item">Projects</span>
+                </a>
+                <span class="tooltip">Projects</span>
+            </li>
+
+            <li>
+                <a href="#contact">
+                    <i class="fa-solid fa-address-book"></i>
+                    <span class="nav-item">Contact</span>
+                </a>
+                <span class="tooltip">Contact</span>
+            </li>
+
+        </ul>
+    </div>
+
+
+    <!-- Theme section -->
+    <div class="theme-container">
+
+        <div class="theme-btn">
+            <i class="fa-solid fa-sun" id="mode-theme"></i>
+            <i class="fa-solid fa-droplet" id="color-theme"></i>
+        </div>
+
+        <div class="colors-container">
+            <h3>Theme Colors</h3>
+            <div class="colors-btn">
+                <span style="background-color: #8b00e8;" onclick="colorChange('#8b00e8','#6c00b4','#d79aff')"></span>
+                <span style="background-color: #ee00a7" onclick="colorChange('#ee00a7','#bc0084','#ff8fdd')"></span>
+                <span style="background-color: #00e0a1" onclick="colorChange('#00e0a1','#00aa7a','#8bffde')"></span>
+                <span style="background-color: #ff8c00" onclick="colorChange('#ff8c00','#cd7100','#ffc67f')"></span>
+                <span style="background-color: #ff0000" onclick="colorChange('#ff0000','#ca0000','#ff8585')"></span>
+                <span style="background-color: #3ae8f4" onclick="colorChange('#3ae8f4','#2ab6c1','#a4f4fa')"></span>
+                <span style="background-color: #bfcd00" onclick="colorChange('#bfcd00','#99ad00','#faff95')"></span>
+                <span style="background-color: #ee0057" onclick="colorChange('#ee0057','#bd0045','#ff8fb8')"></span>
+                <span style="background-color: #0400ee" onclick="colorChange('#0400ee','#0300aa','#9593ff')"></span>
+                <span style="background-color: #00d423" onclick="colorChange('#00d423','#009d1a','#8bff9f')"></span>
+                
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Home section -->
+    <div class="other-content">
+        
+        <section id="home" data-aos="zoom-in">
+            <div class="home-text">
+
+                <p>Hello,</p>
+                <p class="identity">I AM <span>Netai Jana</span></p>
+                <p class="work">a <span class="auto-type"></span></p>
+                <p class="text">
+                    I'm a Software Engineer with extensive experience for over 1 year.
+                    My expertise is to create and design websites, Software
+                    and much more...
+                </p>
+
+                <div class="home-btn">
+                    <a href="#about" class="btn">About Me</a>
+                    <a href="#contact" class="btn-transparent">Hire Me</a>
+                </div>
+
+
+                <div class="social-media-btn">
+
+                    <a href="https://www.facebook.com/share/16BhKhR8Hq/?mibextid=qi2Omg">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </a>
+
+                    <a
+                        href="http://www.linkedin.com/in/netai-jana-4baa92256">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <span>Linkedin</span>
+                    </a>
+
+                    <a href="https://www.instagram.com/netai.jana.9480?igsh=Z3VrMmd3NjlrMW0y">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+
+                    <a href="https://github.com/Netai-2024">
+                        <i class="fa-brands fa-github"></i>
+                        <span>Github</span>
+                    </a>
+
+                    <a href="http://www.linkedin.com/in/netai-jana-4baa92256">
+                        <i class="fa-brands fa-youtube"></i>
+                        <span>Youtube</span>
+                    </a>
+                    
+                </div>
+
+
+            </div>
+
+            <div class="home-image">
+                <img class="mainImg" src="img1.png" alt="Main Image">
+                <img src="python.png" class="bounce-image" alt="Python">
+                <img src="java.svg" class="bounce-image" alt="Java">
+                <img src="html.png" class="bounce-image" alt="HTML">
+                <img src="CSS.png" class="bounce-image" alt="CSS">
+                <img src="js.png" class="bounce-image" alt="JavaScript">                
+            </div>
+
+        </section>
+
+
+
+        <!-- About section -->
+        <section id="about">
+            <div class="about-image-section" data-aos="slide-right">
+                <img class="about-img" src="img2.png" alt="About Image">
+                <img class="about-img" src="img2.png" alt="About Image">
+                <img class="about-img" src="img2.png" alt="About Image">
+                <img class="about-img" src="img2.png" alt="About Image">
+                <img class="about-img" src="img2.png" alt="About Image">
+                <img class="about-img" src="img2.png" alt="About Image">
+            </div>
+
+            <div class="about-content" data-aos="slide-left">
+                <h1>Who Am I?</h1>
+                <h1>
+                    I'm Netai Jana, a Software Engineer, Frontend Developer, Backend Developer and Competitive Programmer.
+                </h1>
+
+                <p>I'm passionate about crafting web solutions and software applications that empower businesses and
+                    individuals. Armed with expertise in HTML, CSS, and JavaScript, I've successfully delivered websites
+                    that function flawlessly. I also thrive in the world of competitive programming, where I enjoy the
+                    precision and power it offers. With a strong foundation in these skills, I am committed to creating
+                    dynamic, user-friendly web applications and constantly seek new challenges and opportunities to
+                    grow.
+                </p>
+
+                <div class="about-details">
+                    <p><span>Name:</span> Netai Jana</p>
+                    <p><span>Age:</span> 21 Years</p>
+                    <p><span>From:</span> Hooghly, West Bengal, India</p>
+                    <p><span>Email:</span> netaij922@gmail.com</p>
+                </div>
+
+                <a href="Netai_Jana_SDE.pdf" class="btn" target="_blank">Download CV</a>
+            </div>
+
+        </section>
+
+
+
+        <!-- Education section -->
+        <section id="education" class="education-experience" data-tilt data-tilt-max="5" data-tilt-speed="500" >
+            <h1>Education</h1>
+            <div class="education-experience-container clearfix" data-aos="slide-right">
+
+                <div class="education-experience-content">
+                    <h3>Graduation Degree</h3>
+                    <p>Currently pursuing B.Tech in CSE at Durgapur Institute of Advanced Technology and Management, where I continue to
+                        develop my skills in cutting-edge technology and innovation.</p>
+                    <i class="fa-solid fa-building-columns"></i>
+                    <span class="date">2021 - 2025</span>
+                </div>
+               
+                <div class="education-experience-content">
+                    <h3>Higher Secondary Degree</h3>
+                    <p>I achieved 79% in Science from Baradongal Ramanath Institute, affiliated with WBCHSE Board, showcasing dedication
+                        and a strong work ethic.</p>
+                    <i class="fa-solid fa-school"></i>
+                    <span class="date">2019 - 2021</span>
+                </div>
+
+                <div class="education-experience-content">
+                    <h3>Secondary School Degree</h3>
+                    <p>I am a dedicated and high-achieving student, having completed my secondary school degree from
+                        Baradongal Ramanath Institute, affiliated with the West Bengal Board of Secondary Education (WBBSE) Board, with an impressive score of 78%.
+                    </p>
+                    <i class="fa-solid fa-school-flag"></i>
+                    <span class="date">2013 - 2019</span>
+                </div>
+                
+            </div>
+        </section>
+
+        
+
+
+        <!-- Expirence section  -->
+
+        <section id="experience" class="education-experience" data-tilt data-tilt-max="5" data-tilt-speed="500" >
+            <h1>Experience</h1>
+
+            <div class="education-experience-container clearfix" data-aos="slide-left">
+
+                <div class="education-experience-content">
+                    <h3>Self-Initiated Project</h3>
+                    <p class="date2">July 2024 - Present</p>
+                    <p>Developed a smart medicine recommendation system that personalizes treatment based on patient data and history.
+                        Integrated a Flask web interface, AI chatbot, and visual dashboards for improve user experience and
+                        clinical insights. Reduced prescription errors by 30% through automated, data-driven decision support.
+                        Deployed an AI chatbot to provide real-time, personalized assistance, increasing user efficiency by 40%
+                    </p>
+                    <img src="MRS.png" alt="">
+                </div>
+
+                <!-- <div class="education-experience-content">
+                    <h3>Smart India Hackathon</h3>
+                    <p class="date2">Sep 2023 - Oct 2023</p>
+                    <p>I co-created an educational website with my teammate for SIH (Smart India Hackathon), focusing on
+                        innovative learning solutions.</p>
+                    <img src="SIH2.webp" alt="">
+                </div>
+
+                <div class="education-experience-content">
+                    <h3>Hi-Tech System and Services Ltd.</h3>
+                    <p class="date2">Apr 2024 - Present</p>
+                    <p>I am currently interning as a web developer at Hi-Tech System and Services Ltd., gaining valuable
+                        experience in web development and technology.</p>
+                    <img src="images.png" alt="">
+                </div> -->
+
+            </div>
+
+        </section>              
+
+
+
+
+        <!-- Skill section -->
+        <section id="skills">
+            <h1>My Skills</h1>
+            <div class="skill-container">
+                <div class="line-progress" data-aos="zoom-in-right">
+
+                    <!-- Technical Skills -->
+                    <h3>Technical Skills</h3>
+
+                    <div class="line-progress-bar">
+                        <i class='bx bxl-html5' style="color: rgb(252, 86, 25);"></i>
+                        <p>HTML</p>
+                        <div class="progress-bar">
+                            <span class="html"></span>
+                        </div>
+                    </div>
+
+                    <div class="line-progress-bar">
+                        <i class='bx bxl-css3' style="color: rgb(45, 107, 251);"></i>
+                        <p>CSS</p>
+                        <div class="progress-bar">
+                            <span class="css"></span>
+                        </div>
+                    </div>
+
+                    <div class="line-progress-bar">
+                        <i class='bx bxs-file-js' style="color: rgb(251, 235, 2);"></i>
+                        <p>JavaScript</p>
+                        <div class="progress-bar">
+                            <span class="js"></span>
+                        </div>
+                    </div>
+
+                    <div class="line-progress-bar">
+                        <i class='bx bxl-tailwind-css' style="color: rgb(0, 221, 225);"></i>
+                        <p>Tailwind CSS</p>
+                        <div class="progress-bar">
+                            <span class="tailwind"></span>
+                        </div>
+                    </div>
+
+                    <div class="line-progress-bar">
+                        <i class='bx bxl-react' style="color: rgb(97, 219, 251);"></i>
+                        <p>React</p>
+                        <div class="progress-bar">
+                            <span class="react"></span>
+                        </div>
+                    </div>
+
+                    <div class="line-progress-bar">
+                        <i class='fab fa-java' style="color: rgb(220, 4, 152);"></i>
+                        <p>Java</p>
+                        <div class="progress-bar">
+                            <span class="Java"></span>
+                        </div>
+                    </div>
+
+                    <div class="line-progress-bar">
+                        <!-- Python Icon -->
+                        <i class='fab fa-python' style="color: #036eac;"></i>
+                        <p>Python</p>
+                        <div class="progress-bar">
+                            <span class="Python"></span>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="circular-progress" data-aos="zoom-in-left">
+
+                    <!-- Professional Skills -->
+                    <h3>Professional Skills</h3>
+
+                    <div class="circular-progress-container">
+
+                        <div class="progress-circle-content">
+                            <div class="circle-progress" data-degree="90">
+                                <span></span>
+                            </div>
+                            <p>Creativity</p>
+                        </div>
+
+                        <div class="progress-circle-content">
+                            <div class="circle-progress" data-degree="75">
+                                <span></span>
+                            </div>
+                            <p>Problem Solving</p>
+                        </div>
+
+                        <div class="progress-circle-content">
+                            <div class="circle-progress" data-degree="65">
+                                <span></span>
+                            </div>
+                            <p>Communication</p>
+                        </div>
+
+                        <div class="progress-circle-content">
+                            <div class="circle-progress" data-degree="75">
+                                <span></span>
+                            </div>
+                            <p>Adaptability</p>
+                        </div>                       
+
+                        <div class="progress-circle-content">
+                            <div class="circle-progress" data-degree="95">
+                                <span></span>
+                            </div>
+                            <p>Teamwork</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Project section -->
+        <section id="project">
+            <h1>Projects</h1>
+
+            <div class="card-container">
+
+                <div class="card" data-aos="slide-right">
+                    <div class="card-image">
+                        <img src="proj1.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>Gallery</h3>
+                        <div class="description">The website allows users to view and download free images and videos,
+                            enhancing accessibility to a wide range of multimedia resources.</div>
+                        <a href="https://github.com/Netai-2024" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="proj2.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>All World Recipes</h3>
+                        <div class="description">The website showcases a curated collection of recipes, providing users
+                            with a platform to explore and discover a variety of dishes conveniently.</div>
+                        <a href="https://github.com/Netai-2024" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+                <div class="card" data-aos="slide-left">
+                    <div class="card-image">
+                        <img src="proj3.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>Flipkart Clone</h3>
+                        <div class="description">Available Soon</div>
+                        <!-- <div class="description">A Flipkart clone using HTML and CSS, featuring a similar layout and
+                            design to showcase products and facilitate user interaction.</div> -->
+                        <a href="https://github.com/Netai-2024" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+                <!-- <div class="card" data-aos="slide-right">
+                    <div class="card-image">
+                        <img src="proj4.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>GameZone</h3>
+                        <div class="description">A gaming website featuring a Sudoku solver, Tic-Tac-Toe, Snake and
+                            Ladder, and Whack-a-Mole games for interactive and challenging gameplay experiences.</div>
+                        <a href="https://rohitkheto.github.io/Game/" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div> 
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="proj5.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>Sorting & Searching Visualizer</h3>
+                        <div class="description">A Sorting & Searching visualizer that demonstrates bubble, selection, insertion, merge, quick, heap sort and binary search and linear search algorithm.</div>
+                        <a href="https://algorithm-visualizer-07.netlify.app/" class="btn" target="_blank">View
+                            Project</a>
+                    </div>
+                </div>      -->
+
+                <div class="card" data-aos="slide-left">
+                    <div class="card-image">
+                        <img src="proj6.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>Knowledge Junction</h3>
+                        <div class="description">Secission Expired</div>
+                        <!-- <div class="description">An educational website offering multimedia resources for various
+                            courses, including a chat application for assistance and a timer to aid in focused study sessions.
+                        </div> -->
+                        <a href="https://github.com/Netai-2024" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+                <!-- <div class="card" data-aos="slide-right">
+                    <div class="card-image">
+                        <img src="proj7.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>All World News</h3>
+                        <div class="description">A comprehensive global news website providing up-to-date coverage of
+                            news from around the world, covering diverse topics and regions.</div>
+                        <a href="https://rohitkheto.github.io/News/" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div> -->
+
+                <div class="card" data-aos="slide-up">
+                    <div class="card-image">
+                        <img src="proj8.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>CalculateAllInOne</h3>
+                        <div class="description">Available Soon</div>
+                        <div class="description">A versatile calculator website featuring a simple calculator, BMI
+                            calculator, length, temperature, and weight converter for easy and accurate calculations.
+                        </div>
+                        <a href="https://github.com/Netai-2024" class="btn" target="_blank">View
+                            Project</a>
+                    </div>
+                </div>
+
+                <!-- <div class="card" data-aos="slide-left">
+                    <div class="card-image">
+                        <img src="proj9.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>ClockMaster</h3>
+                        <div class="description">A clock website featuring a digital and analog clock display, timer,
+                            stopwatch, and alarm functionalities for accurate time management and scheduling.</div>
+                        <a href="https://r9ohitkheto.github.io/clock/" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div> -->
+
+            </div>
+
+        </section>
+
+        <!-- Certifications -->
+
+        <!-- Contact section -->
+        <section id="contact" data-aos="zoom-in">
+            <div class="form">
+                <div class="contact-info">
+
+                    <h3 class="title">Let's get in touch</h3>
+                    <p class="text">
+                        Feel free to get in touch with me for any queries or collaborations. I'm eager to connect!
+                    </p>
+
+                    <div class="info">
+                        <div class="information">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <p>Dongal, Hooghly, West Bengal</p>
+                        </div>
+                        <div class="information">
+                            <i class="fas fa-envelope"></i>
+                            <p>netaij922@gmail.com</p>
+                        </div>
+                        <div class="information">
+                            <i class="fas fa-phone-alt"></i>
+                            <p>9339051132</p>
+                        </div>
+                    </div>
+
+                    <div class="social-media">
+                        <p>Connect with me :</p>
+
+                        <div class="social-media-btn">
+
+                            <a href="https://www.facebook.com/share/16BhKhR8Hq/?mibextid=qi2Omg">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </a>
+
+                            <a
+                                href="http://www.linkedin.com/in/netai-jana-4baa92256">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                <span>Linkedin</span>
+                            </a>
+
+                            <a href="https://www.instagram.com/netai.jana.9480?igsh=Z3VrMmd3NjlrMW0y">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+
+                            <a href="https://github.com/Netai-2024">
+                                <i class="fa-brands fa-github"></i>
+                                <span>Github</span>
+                            </a>
+
+                            <a href="http://www.linkedin.com/in/netai-jana-4baa92256">
+                                <i class="fa-brands fa-youtube"></i>
+                                <span>Youtube</span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="contact-form">
+                    <span class="circle one"></span>
+                    <span class="circle two"></span>
+
+                    <form action="index.html" autocomplete="off">
+                        <h3 class="title">Contact me</h3>
+
+                        <div class="input-container">
+                            <input type="text" name="name" class="input" placeholder=" " required>
+                            <label for="name">Username</label>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="email" name="email" class="input" placeholder=" " required>
+                            <label for="email">Email</label>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="tel" name="phone" class="input" placeholder=" " required>
+                            <label for="phone">Phone</label>
+                        </div>
+
+                        <div class="input-container textarea">
+                            <textarea name="message" class="input" placeholder=" " required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+
+                        <input type="submit" value="Send" class="contact-btn" />
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer-container">
+            <div class="footer-content">
+                <p>&copy; 2025 Netai Jana. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart heart-icon"></i> Designed by Lord Netai Jana</p>
+            </div>
+        </footer>
+        
+    </div>
+    <!-- Card Tilt Effect -->
+    <script src="vanilla-tilt.js"></script>
+    <!-- Type Effect in Home section -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Adding my javascript file -->
+    <script src="script.js"></script>
+    <!-- scroll animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,
+            duration: 700,
+        });
+    </script>
+</body>
+
+</html>
