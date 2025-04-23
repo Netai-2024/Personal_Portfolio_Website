@@ -96,4 +96,51 @@ var typed = new Typed('.auto-type', {
     backDelay: 500,
     loop: true
   });
+
+  
+
+// 📜 Certificate View Modal Logic (supports PDFs and images)
+
+function openModal(filePath) {
+    const modal = document.getElementById("certificateModal");
+    const iframe = document.getElementById("certificateFrame");
+    const image = document.getElementById("certificateImage");
+  
+    const isImage = filePath.match(/\.(jpeg|jpg|png|gif)$/i);
+  
+    if (isImage) {
+      image.src = filePath;
+      image.style.display = "block";
+      iframe.style.display = "none";
+    } else {
+      iframe.src = filePath;
+      iframe.style.display = "block";
+      image.style.display = "none";
+    }
+  
+    modal.style.display = "block";
+    document.body.classList.add("no-scroll"); // prevent background scrolling
+  }
+  
+  function closeModal() {
+    const modal = document.getElementById("certificateModal");
+    const iframe = document.getElementById("certificateFrame");
+    const image = document.getElementById("certificateImage");
+  
+    iframe.src = "";
+    image.src = "";
+  
+    modal.style.display = "none";
+    document.body.classList.remove("no-scroll"); // re-enable scrolling
+  }
+  
+  // Optional: Close modal when clicking outside content
+  window.onclick = function(event) {
+    const modal = document.getElementById("certificateModal");
+    if (event.target === modal) {
+      closeModal();
+    }
+  };
+  
+
   
