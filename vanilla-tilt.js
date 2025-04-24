@@ -445,6 +445,7 @@ class VanillaTilt {
       gyroscopeSamples: 10
     };
 
+    
     let newSettings = {};
     for (var property in defaultSettings) {
       if (property in settings) {
