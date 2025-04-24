@@ -285,7 +285,7 @@ body {
 .social-media-btn {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1.8rem;
     color: var(--text-color-secondary);
 }
 
@@ -364,6 +364,15 @@ body {
 .social-media-btn a:nth-child(5):hover i {
     color: white;
     background-color: #001d5d;
+}
+
+.social-media-btn a:nth-child(6) {
+    color: #FF0000;
+}
+
+.social-media-btn a:nth-child(6):hover i {
+    color: white;
+    background-color: #FF0000;
 }
 
 
@@ -577,7 +586,7 @@ body {
 }
 
 .about-details p:nth-child(4) {
-    color: blue;
+    color: rgb(22, 248, 255);
 }
 
 .education-experience {
@@ -773,7 +782,7 @@ body {
 }
 
 .card {
-    min-width: 380px;
+    min-width: 320px;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -782,7 +791,7 @@ body {
     transition: all 0.5s ease;
     background-color: #fff;
     position: relative;
-    box-shadow: 0 0px 15px rgb(87, 87, 87);
+    box-shadow: 0 0px 15px rgb(207, 127, 127);
     background-color: var(--bg-light-color);
 }
 
@@ -793,12 +802,12 @@ body {
 .card:hover .card-image {
     top: -65px;
     scale: 0.85;
-    box-shadow: 0 0px 20px rgb(111, 111, 111);
+    box-shadow: 0 0px 20px rgb(208, 140, 140);
 }
 
 .card-image {
-    min-width: 360px;
-    border-radius: 15px;
+    min-width: 300px;
+    border-radius: 20px;
     position: absolute;
     top: 9px;
     height: 180px;
@@ -1072,100 +1081,185 @@ span {
 }
 
 /* Certification Section Styles */
+/* === Certification Section === */
 #certification {
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: 50px;
     padding: 60px 20px;
+    border-radius: 16px;
     background-color: var(--bg-light-color);
     color: var(--text-color-primary);
     text-align: center;
-    border-radius: 20px;
-    position: relative;
-    z-index: 1;
-    animation: slideIn 1s ease-in-out both;
-  }
-  
-  /* Slide-in animation */
-  @keyframes slideIn {
-    0% {
-      transform: translateY(50px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-  #certification h1 {
+}
+
+#certification h1 {
     font-size: 36px;
     margin-bottom: 40px;
-  }
-  
-  /* Certificate container animation */
-  .certificate-container {
+}
+
+.certificate-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    opacity: 0;
-    transform: translateY(40px);
-    animation: slideIn 1s ease-in-out forwards;
-    animation-delay: 0.5s;
-    position: relative;
-    z-index: 2;
-  }
-  
-  /* Certificate card styles */
-  .certificate-card {
+}
+
+/* === Keyframes for Entrance Animations === */
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* === Certificate Card === */
+.certificate-card {
     width: 260px;
+    height: 180px;
     background: #fff;
     color: #333;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    z-index: 2;
+    box-shadow: 0 0px 15px rgb(207, 127, 127);
     position: relative;
-  }
-  
-  .certificate-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .certificate-image img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* === Animate Each Card Differently === */
+.certificate-card.animate:nth-child(1) {
+    animation: slideInLeft 0.8s ease forwards;
+}
+.certificate-card.animate:nth-child(2) {
+    animation: slideInTop 0.8s ease forwards;
+}
+.certificate-card.animate:nth-child(3) {
+    animation: slideInBottom 0.8s ease forwards;
+}
+.certificate-card.animate:nth-child(4) {
+    animation: slideInRight 0.8s ease forwards;
+}
+
+/* === Hover Effect Expands Card === */
+.certificate-card:hover {
+    height: 330px;
+}
+
+/* === Image Styling (Fix image inside card) === */
+.certificate-image {
+    width: calc(100% - 40px); /* 20px space left and right */
+    height: 160px;
+    margin: 20px auto 10px auto; /* Top: 20px, Left/Right auto (centered), Bottom: 10px */
+    background: #f9f9f9;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+}
+
+.certificate-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: contain;
+    object-position: top;
+    border-radius: 15px;
     display: block;
-  }
-  
-  .certificate-title {
-    padding: 15px;
+    background-color: white;
+}
+/* === Hover effect on image (for expansion and scaling) === */
+.certificate-card:hover .certificate-image {
+    top: -40px;
+    scale: 0.9;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* === Title & View Button === */
+.certificate-title,
+.view-btn {
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s ease;
+    text-align: center;
+    width: 100%;
+}
+
+.certificate-title {
+    top: 190px;
     background-color: #f8f8f8;
     font-size: 18px;
     font-weight: 600;
     color: #333;
+    padding: 10px 0;
     border-top: 1px solid #ddd;
-  }
-  
-  .view-btn {
-    margin: 10px auto 20px;
+}
+
+.view-btn {
+    top: 270px;
     padding: 8px 16px;
     background-color: var(--primary-color);
     color: white;
-    border-radius: 25px;
+    border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .view-btn:hover {
+    transition: background-color 0.3s ease, opacity 0.5s ease;
+    width: fit-content;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.certificate-card:hover .certificate-title,
+.certificate-card:hover .view-btn {
+    opacity: 1;
+}
+
+.view-btn:hover {
     background-color: #083a75;
-  }
-  
-  /* Modal Styles */
-  .modal {
+}
+
+/* === Modal Styles === */
+.modal {
     display: none;
     position: fixed;
     z-index: 1000;
@@ -1174,10 +1268,10 @@ span {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  .modal .close {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal .close {
     position: absolute;
     top: 20px;
     right: 35px;
@@ -1185,54 +1279,18 @@ span {
     font-size: 40px;
     font-weight: bold;
     cursor: pointer;
-  }
-  
-  .modal iframe {
+}
+
+.modal iframe {
     margin-top: 0;
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
-  
-  .no-scroll {
+}
+
+.no-scroll {
     overflow: hidden;
-  }
-  
-  /* Optional Circle Effects */
-  .certification-circle {
-    border-radius: 50%;
-    background: linear-gradient(135deg, transparent 20%, var(--primary-color-dark));
-    position: absolute;
-    z-index: 0;
-    opacity: 0.3;
-  }
-  
-  .certification-circle.one {
-    width: 200px;
-    height: 200px;
-    top: 100px;
-    left: -50px;
-  }
-  
-  .certification-circle.two {
-    width: 120px;
-    height: 120px;
-    bottom: 80px;
-    right: 30px;
-  }
-  
-  /* Responsive Tweaks */
-  @media (max-width: 768px) {
-    #certification {
-      margin: 20px;
-      padding: 40px 10px;
-    }
-  
-    .certificate-card {
-      width: 90%;
-      max-width: 300px;
-    }
-  }
+}
 
 #contact {
     padding:1rem 2rem;
