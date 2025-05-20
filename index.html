@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta tags for responsive behavior and character encoding -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>Netai Jana Portfolio SDE</title>
+
+    <!-- External Libraries for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- AOS (Animate On Scroll) Library for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+
+
+
+
+
+<body>
+    
+
+    <!-- ================= Sidebar Navigation Section ================= -->
+
+    <div class="nav-section">
+
+        <!-- Header containing logo/text and hamburger menu -->
+        <div class="nav-header">
+            <span>Personal_Portfolio</span>
+            <i class="fa-solid fa-bars" id="active-btn"></i>
+        </div>
+
+        <!-- Main profile image and title in the sidebar -->
+        <div class="nav-main">
+            <img src="Static/Nav-Image.jpg" alt="Profile Picture">
+            <div>
+                <p>NETAI JANA</p>
+                <p>Full Stack Developer</p>
+            </div>
+        </div>
+
+        <!-- Sidebar Navigation Links with Tooltips -->
+        <ul>
+            <!-- Each <li> represents a navigation item -->
+
+
+            <!-- Home link -->
+            <li>
+                <a href="#home" class="active-section">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="nav-item">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+
+
+            <!-- About link -->
+            <li>
+                <a href="#about">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="nav-item">About</span>
+                </a>
+                <span class="tooltip">About</span>
+            </li>
+
+
+            <!-- Education link -->
+            <li>
+                <a href="#education">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span class="nav-item">Education</span>
+                </a>
+                <span class="tooltip">Education</span>
+            </li>
+
+
+            <!-- Experience link -->
+            <li>
+                <a href="#experience">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <span class="nav-item">Experience</span>
+                </a>
+                <span class="tooltip">Experience</span>
+            </li>
+
+
+            <!-- Skills link -->
+            <li>
+                <a href="#skills">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <span class="nav-item">Skills</span>
+                </a>
+                <span class="tooltip">Skills</span>
+            </li>
+
+
+            <!-- Projects link -->
+            <li>
+                <a href="#projects">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <span class="nav-item">Projects</span>
+                </a>
+                <span class="tooltip">Projects</span>
+            </li>
+
+
+            <!-- Certification link -->
+            <li>
+                <a href="#certification">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span class="nav-item">Certifications</span>
+                </a>
+                <span class="tooltip">Certifications</span>
+            </li>
+
+
+            <!-- Contact link -->
+            <li>
+                <a href="#contact">
+                    <i class="fa-solid fa-address-book"></i>
+                    <span class="nav-item">Contact</span>
+                </a>
+                <span class="tooltip">Contact</span>
+            </li>
+
+
+        </ul>
+    </div>
+
+
+
+
+
+
+
+    <!-- ================= Theme & Color Selection Section ================= -->
+
+    <div class="theme-container">
+
+        <!-- Theme toggle icons: sun (light mode), droplet (color theme) -->
+        <div class="theme-btn">
+            <i class="fa-solid fa-sun" id="mode-theme"></i>
+            <i class="fa-solid fa-droplet" id="color-theme"></i>
+        </div>
+
+        <!-- Color palette options for customizing theme -->
+        <div class="colors-container">
+            <h3>Theme Colours</h3>
+
+            <div class="colors-btn">
+                <!-- Each span represents a clickable color option trigger color Change function with parameters --> 
+                <span style="background-color: #8b00e8;" onclick="colorChange('#8b00e8','#6c00b4','#d79aff')"></span>
+                <span style="background-color: #ee00a7" onclick="colorChange('#ee00a7','#bc0084','#ff8fdd')"></span>
+                <span style="background-color: #00e0a1" onclick="colorChange('#00e0a1','#00aa7a','#8bffde')"></span>
+                <span style="background-color: #ff8c00" onclick="colorChange('#ff8c00','#cd7100','#ffc67f')"></span>
+                <span style="background-color: #ff0000" onclick="colorChange('#ff0000','#ca0000','#ff8585')"></span>
+                <span style="background-color: #3ae8f4" onclick="colorChange('#3ae8f4','#2ab6c1','#a4f4fa')"></span>
+                <span style="background-color: #bfcd00" onclick="colorChange('#bfcd00','#99ad00','#faff95')"></span>
+                <span style="background-color: #ee0057" onclick="colorChange('#ee0057','#bd0045','#ff8fb8')"></span>
+                <span style="background-color: #0400ee" onclick="colorChange('#0400ee','#0300aa','#9593ff')"></span>
+                <span style="background-color: #00d423" onclick="colorChange('#00d423','#009d1a','#8bff9f')"></span>
+                <!-- ... add more color options -->
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- ================= Main Content Section ================= -->
+
+    <div class="other-content">
+        
+        <!-- ==================== Home Section ======================== -->
+        <section id="home" data-aos="zoom-in">
+
+            <!-- Background Video for Dark Mode -->
+            <video id="darkVideo1" class="bg-video" muted style="display: Block;">
+                <source src="Static/Background1.mp4" type="video/mp4" />   
+            </video>
+
+            <video id="darkVideo2" class="bg-video" muted style="display: none;">
+                <source src="Static/Background2.mp4" type="video/mp4" />   
+            </video>
+
+
+            <!-- Background Video for Light Mode -->
+            <video id="lightVideo1" class="bg-video" muted style="display: none;">
+                <source src="Static/Background3.mp4" type="video/mp4" />   
+            </video>
+
+            <video id="lightVideo2" class="bg-video" muted style="display: none;">
+                <source src="Static/Background4.mp4" type="video/mp4" />   
+            </video>
+
+
+            <div class="home-text">
+
+                <h1>Wellcome to my Portfolio,</h1>
+                <p class="identity">I am <span>Netai Jana</span></p>
+                <p class="work">a <span class="auto-type"></span></p>
+                <p class="text">
+                    I am a Software Engineer with extensive experience for over 1 year.
+                    My expertise is to create and design fully functional Software, Web Applications, AI integration and much more .....
+                </p>
+
+                <!-- Buttons linking to other sections -->
+                <div class="home-btn">
+                    <a href="#about" class="btn">About Me</a>
+                    <a href="#contact" class="btn-transparent">Hire Me</a>
+                </div>
+
+
+                <!-- Social Media Links -->
+                <div class="social-media-btn">
+
+                    <a href="https://www.facebook.com/share/166grUmgXH/?mibextid=qi2Omg">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </a>
+
+                    <a href="https://www.instagram.com/netai.jana.9480?igsh=Z3VrMmd3NjlrMW0y">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+
+                    <a href="https://in.linkedin.com/in/netai-jana-4baa92256">
+                        <i class="fa-brands fa-youtube"></i>
+                        <span>Youtube</span>
+                    </a>
+
+                    <a
+                        href="https://in.linkedin.com/in/netai-jana-4baa92256">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <span>Linkedin</span>
+                    </a>
+
+                    <a href="https://github.com/Netai-2024">
+                        <i class="fa-brands fa-github"></i>
+                        <span>Github</span>
+                    </a>
+
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=netaij922@gmail.com" title="Compose email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Gmail</span>
+                    </a> 
+                  
+                </div>
+
+            </div>
+
+
+            <!-- Developer image and floating tech stack logos -->
+            <div class="home-image">
+                <img class="mainImg" src="Static/Home_image.png" alt="Main Image">
+
+                <!-- Floating icons representing skills/tools -->
+                <img src="Static/Html.png" class="bounce-image" alt="HTML">
+                <img src="Static/CSS.png" class="bounce-image" alt="CSS">
+                <img src="Static/JavaScript.png" class="bounce-image" alt="JavaScript">
+                <img src="Static/Python.png" class="bounce-image" alt="Python">
+                <img src="Static/Java.png" class="bounce-image" alt="Java">
+                <img src="Static/React.png" class="bounce-image" alt="React">   
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+        <!-- ==================== About Section ==================== -->
+
+        <section id="about">
+
+            <!-- About Section Images (can be styled as a carousel/grid) -->
+            <div class="about-image-section" data-aos="slide-right">
+
+                <!-- Repeated 5 more times ( placeholder for visual design effect) -->
+                <img class="about-img" src="Static/About_img.png" alt="About Image">
+                <img class="about-img" src="Static/About_img.png" alt="About Image">
+                <img class="about-img" src="Static/About_img.png" alt="About Image">
+                <img class="about-img" src="Static/About_img.png" alt="About Image">
+                <img class="about-img" src="Static/About_img.png" alt="About Image">
+                <img class="about-img" src="Static/About_img.png" alt="About Image">
+
+            </div>
+
+            <!-- About Content Block -->
+            <div class="about-content" data-aos="slide-left">
+                <h1>Who am I?</h1>
+                <h1>
+                    I am Netai Jana, a passionate Software Developer, a Frontend Developer, a Backend Developer, and a Full Stack Developer also.
+                </h1>
+
+                <!-- Bio Description -->
+                <p>I'm passionate about crafting software solutions and web applications that empower both businesses and individuals.
+                    With a solid foundation in Html, Css, JavaScript, React, Java, and Python, I am specialize in building websites that are not only functional but also visually appealing.
+                    I am also interested in the field of Artificial Intelligent, Machine Learning, Deep Learning and Data Science. I have made several projects in this field.
+                    Beyond development, I actively engage in competitive programming, where I embrace the logic, precision, and problem-solving it demands.                 
+                    Driven by curiosity and a love for learning, I'm committed to creating dynamic, user-friendly web applications, while continuously exploring new challenges and opportunities to grow as a developer.
+                </p>
+
+                <!-- Personal Details -->
+                <div class="about-details">
+                    <p><span>Name:</span> Netai Jana</p>
+                    <p><span>Age:</span> 21 Years</p>
+                    <p><span>From:</span> Hooghly, West Bengal, India</p>
+                    <p><span>Email:</span> netaij922@gmail.com</p>
+                </div>
+
+                <!-- Download CV Button -->
+                <a href="Static/Netai_Jana_SDE.pdf" class="btn" target="_blank">Download CV</a>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+        <!-- =========================== Education Section =========================== -->
+
+        <section id="education" class="education-experience" data-tilt data-tilt-max="5" data-tilt-speed="500" >
+            <h1>Education</h1>
+            <div class="education-experience-container clearfix" data-aos="slide-right">
+
+
+                <!-- Graduation Degree -->
+                <div class="education-experience-content">
+                    <h2>Graduation Degree</h2>
+
+                    <h3>I have successfully completed my B.Tech Degree in Computer Science and Engineering from 
+                        Durgapur Institute of Advanced Technology and Management, 
+                        affiliated with Maulana Abul Kalam Azad University of Technology (MAKAUT).
+                    </h3>
+
+                    <p>During my academic journey, I gained a solid understanding of core computing concepts and developed skills in advanced technologies. 
+                        This experience provide me a strong foundation in software development, system design, and emerging trends, 
+                        while cultivating a problem-solving mindset to tackle real-world tech challenges.
+                    </p>
+
+                    <i class="fa-solid fa-building-columns"></i>
+                    <span class="date">2021 - 2025</span>
+                </div>
+
+               
+                <!-- Higher Secondary Education -->
+                <div class="education-experience-content">
+                    <h2>Higher Secondary Education</h2>
+
+                    <h3>I have completed my Higher Secondary education from Baradongal Ramanath Institution, affiliated with West Bengal Council of Higher Secondary Education (WBCHSE).</h3>
+
+                    <p>During this time, I built a strong foundation in general science and developed essential academic skills, while enhancing my analytical thinking and problem-solving abilities. 
+                        I achieved 79%, demonstrating my dedication and work ethic, which have prepared me for advanced studies in engineering.
+                    </p>
+
+                    <i class="fa-solid fa-school"></i>
+                    <span class="date">2019 - 2021</span>
+                </div>
+
+
+                <!-- Secondary School Education -->
+                <div class="education-experience-content">
+                    <h2>Secondary School Education</h2>
+
+                    <h3>I have completed my Secondary education from Baradongal Ramanath Institution, affiliated with the West Bengal Board of Secondary Education (WBBSE).</h3>
+
+                    <p>I am a dedicated student who built a strong academic foundation in secondary school. 
+                        I achieved an impressive Score in secondary school, reflecting my commitment to excellence, hard work, and determination. 
+                        This accomplishment laid the groundwork for my future educational pursuits.
+                    </p>
+
+                    <i class="fa-solid fa-school-flag"></i>
+                    <span class="date">2013 - 2019</span>
+                </div>
+                
+            </div>
+        </section>
+
+
+
+        
+
+
+
+       <!-- =========================== Experience Section =========================== -->
+
+        <section id="experience" class="education-experience" data-tilt data-tilt-max="5" data-tilt-speed="500" >
+            <h1>Experience</h1>
+
+            <div class="education-experience-container clearfix" data-aos="slide-left">
+
+
+                <!-- Self-Initiated Project -->
+                <div class="education-experience-content">
+                    <h3>Self-Initiated Project</h3>
+                    <p class="date2">July 2024 - June 2025</p>
+
+                    <p>Developed a smart Medicine Recommendation System that personalizes treatment based on patient data and history.
+                        Integrated a Flask web interface, AI chatbot, and visual dashboards for improve user experience and
+                        clinical insights. Reduced prescription errors by 30% through automated, data-driven decision support.
+                        Deployed an AI chatbot to provide real-time, personalized assistance, increasing user efficiency by 40%
+                    </p>
+                    <img src="Static/MRS.png" alt="">
+                </div>
+
+
+                <div class="education-experience-content">
+                    <h3>Digital Learning Platform</h3>
+                    <p class="date2">January 2024 - June 2024</p>
+
+                    <p> Designed and developed a scalable Digital Learning Platform featuring video lectures, interactive quizzes, and real-time student progress tracking.
+                        Implemented secure user authentication, robust course management capabilities, and an intuitive admin dashboard for streamlined platform oversight.
+                    </p>
+                    <img src="Static/E-Learning.png" alt="">
+                </div>
+
+
+                <div class="education-experience-content">
+                    <h3>Online Shopping Platform</h3>
+                    <p class="date2">July 2023 - Decembar 2023</p>
+
+                    <p>Designed and developed a responsive, user-friendly e-commerce website for seamless digital trade.
+                        Implemented key features including product catalog management, secure payment gateway, user registration and login, shopping cart, and order tracking—reducing checkout time by 25%.
+                        Ensured mobile-friendly design and seamless cross-device compatibility focusing on a user-centric UI/UX.
+                    </p>
+                    <img src="Static/Shopping.webp" alt="">
+                </div>
+
+            </div>
+
+        </section>              
+
+
+
+
+
+
+
+        <!-- =========================== Skills Section =========================== -->
+
+        <section id="skills">
+            <h1>My Skills</h1>
+
+            <div class="skill-container">
+
+                <!-- Technical Skills Progress Bars -->
+                <div class="line-progress" data-aos="zoom-in-right">
+                    <h3>Technical Skills</h3>
+
+
+                    <!-- HTML Skill -->
+                    <div class="line-progress-bar">
+                        <i class='bx bxl-html5' style="color: rgb(252, 86, 25);"></i>
+                        <p>HTML</p>
+                        <div class="progress-bar">
+                            <span class="html"></span>
+                        </div>
+                    </div>
+
+
+                    <!-- CSS Skill -->
+                    <div class="line-progress-bar">
+                        <i class='bx bxl-css3' style="color: rgb(45, 107, 251);"></i>
+                        <p>CSS</p>
+                        <div class="progress-bar">
+                            <span class="css"></span>
+                        </div>
+                    </div>
+
+
+                    <!-- JavaScript Skill -->
+                    <div class="line-progress-bar">
+                        <i class='bx bxs-file-js' style="color: rgb(251, 235, 2);"></i>
+                        <p>JavaScript</p>
+                        <div class="progress-bar">
+                            <span class="js"></span>
+                        </div>
+                    </div>
+
+
+                    <!-- Tailwind CSS Skill -->
+                    <div class="line-progress-bar">
+                        <i class='bx bxl-tailwind-css' style="color: rgb(0, 221, 225);"></i>
+                        <p>Tailwind CSS</p>
+                        <div class="progress-bar">
+                            <span class="tailwind"></span>
+                        </div>
+                    </div>
+
+
+                    <!-- React Skill -->
+                    <div class="line-progress-bar">
+                        <i class='bx bxl-react' style="color: rgb(97, 219, 251);"></i>
+                        <p>React</p>
+                        <div class="progress-bar">
+                            <span class="react"></span>
+                        </div>
+                    </div>
+
+
+                    <!-- Java Skill -->
+                    <div class="line-progress-bar">
+                        <i class='bx bxl-java' style="color: rgb(244, 67, 54);"></i>
+                        <p>Java</p>
+                        <div class="progress-bar">
+                            <span class="Java"></span>
+                        </div>
+                    </div>
+
+
+                    <!-- Python Skill -->
+                    <div class="line-progress-bar">
+                        <i class='bx bxl-python' style="color: rgb(55, 118, 171);"></i>
+                        <p>Python</p>
+                        <div class="progress-bar">
+                            <span class="Python"></span>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+
+
+                <!-- Professional Skills Circular Progress -->
+                <div class="circular-progress" data-aos="zoom-in-left">
+                    <h3>Professional Skills</h3>
+
+                    <div class="circular-progress-container">
+
+
+                        <!-- Creativity -->
+                        <div class="progress-circle-content">
+                            <div class="circle-progress" data-degree="90">
+                                <span></span>
+                            </div>
+                            <p>Creativity</p>
+                        </div>
+
+
+                        <!-- Problem Solving -->
+                        <div class="progress-circle-content">
+                            <div class="circle-progress" data-degree="75">
+                                <span></span>
+                            </div>
+                            <p>Problem Solving</p>
+                        </div>
+
+
+                        <!-- Communication -->
+                        <div class="progress-circle-content">
+                            <div class="circle-progress" data-degree="65">
+                                <span></span>
+                            </div>
+                            <p>Communication</p>
+                        </div>
+
+
+                        <!-- Adaptability -->
+                        <div class="progress-circle-content">
+                            <div class="circle-progress" data-degree="75">
+                                <span></span>
+                            </div>
+                            <p>Adaptability</p>
+                        </div>                
+                        
+                        
+                        <!-- Teamwork -->
+                        <div class="progress-circle-content">
+                            <div class="circle-progress" data-degree="95">
+                                <span></span>
+                            </div>
+                            <p>Teamwork</p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- =========================== Project Section =========================== -->
+
+        <section id="projects">
+            <h1>Projects</h1>
+
+            <div class="card-container">
+
+
+                <!-- =================== Project 1: Digital Learning Platform =================== --> 
+                <div class="card" data-aos="slide-right">
+                    <div class="card-image">
+                        <img src="Static/Digital_Learning_Platform1.png" alt="Screenshot of Digital Learning Platform">
+                    </div>
+
+                    <div class="card-content">
+                        <h3>Digital Learning Platform</h3>
+                        <div class="description">Coming Soon</div>
+
+                        <div class="description">An educational website offering multimedia resources for various courses, 
+                            including a chat application for assistance and a timer to aid in focused study sessions.
+                        </div>
+
+                        <a href=" https://netaijana-2025.github.io/Digital_Learning/" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+
+
+                <!-- =================== Project 2: Online Shopping Platform =================== -->                
+                <div class="card" data-aos="slide-down">
+                    <div class="card-image">
+                        <img src="Static/Online_Shopping_Platform2.png" alt="Screenshot of Online Shopping Platform">
+                    </div>
+
+                    <div class="card-content">
+                        <h3>Online Shopping Platform</h3>
+                        <div class="description">Coming Soon</div>
+
+                        <div class="description">A Flipkart clone using HTML and CSS, featuring a similar layout and
+                            design to showcase products and facilitate user interaction.
+                        </div>
+
+                        <a href=" https://netaijana-2025.github.io/Online_Shopping/" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+
+
+                <!-- =================== Project 3: World Recipes =================== -->
+                <div class="card" data-aos="slide-left">
+                    <div class="card-image">
+                        <img src="Static/World_Recipes3.png" alt="Screenshot of World Recipes">
+                    </div>
+
+                    <div class="card-content">
+                        <h3>World Recipes</h3>
+                        <div class="description">Coming Soon</div>
+
+                        <div class="description">The website showcases a curated collection of recipes, providing users
+                            with a platform to explore and discover a variety of dishes conveniently.
+                        </div>
+
+                        <a href=" https://netaijana-2025.github.io/Food_Recipe/" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+
+
+                <!-- =================== Project 4: Music Player =================== -->
+                <div class="card" data-aos="slide-left">
+                    <div class="card-image">
+                        <img src="Static/Music_Player4.png" alt="Screenshot of Music Player">
+                    </div>
+
+                    <div class="card-content">
+                        <h3>Music Player</h3>
+                        <div class="description">Coming Soon</div>
+
+                        <div class="description">A music player lets users play, pause, and manage audio tracks with features
+                            like volume control, track info display, and playlist support.
+                        </div>
+
+                        <a href="https://github.com/Netai-2024" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+
+                
+                <!-- =================== Project 5: Autonomous Healthcare Center =================== -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="Static/Medicine_Recommendation_Sys5.png" alt="Screenshot of Autonomous Healthcare Center">
+                    </div>
+
+                    <div class="card-content">
+                        <h3>Autonomous Healthcare Center</h3>
+                        <div class="description">Coming Soon</div>
+
+                        <div class="description">"A digital healthcare center that identifies diseases and recommends medicines, diets, workouts, and more. 
+                            It personalizes treatment using patient data and history, with an integrated AI chatbot and visual dashboards."
+                        </div>
+
+                        <a href=" https://netaijana-2025.github.io/Artificial_Health_Center/" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div> 
+
+
+
+                <!-- =================== Project 6: Image Gallery =================== -->
+                <div class="card" data-aos="slide-right">
+                    <div class="card-image">
+                        <img src="Static/Image_Gallery6.png" alt="Screenshot of Image Gallery">
+                    </div>
+
+                    <div class="card-content">
+                        <h3>Gallery</h3>
+                        <div class="description">Coming Soon</div>
+
+                        <div class="description">The website allows users to view and download free images and videos, enhancing accessibility to a wide range of multimedia resources. </div>
+
+                        <a href="https://github.com/Netai-2024" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+                 
+
+                <!-- =================== Project 7: Gamming Hub =================== -->
+                <div class="card" data-aos="slide-right">
+                    <div class="card-image">
+                        <img src="Static/Gamming_Hub7.png" alt="Screenshot of Gamming Hub">
+                    </div>
+
+                    <div class="card-content">
+                        <h3>Gamming Hub</h3>
+                        <div class="description">Coming Soon</div>
+
+                        <div class="description">The website allows users to play various types of games.</div>
+
+                        <a href="https://github.com/Netai-2024" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+
+
+                <!-- =================== Project 8: ClockMaster =================== -->
+                <div class="card" data-aos="slide-up">
+                    <div class="card-image">
+                        <img src="Static/ClockMaster8.png" alt="Screenshot of ClockMaster">
+                    </div>
+
+                    <div class="card-content">
+                        <h3>ClockMaster8</h3>
+                        <div class="description">Coming Soon</div>
+
+                        <div class="description">A clock website featuring a digital and analog clock display, timer,
+                            stopwatch, and alarm functionalities for accurate time management and scheduling.
+                        </div>
+
+                        <a href="https://github.com/Netai-2024" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+
+                
+                <!-- =================== Project 9: CalculateAllInOne =================== -->
+                <div class="card" data-aos="slide-left">
+                    <div class="card-image">
+                        <img src="Static/Calculator9.png" alt="Screenshot of Calculator">
+                    </div>
+
+                    <div class="card-content">
+                        <h3>CalculateAllInOne</h3>
+                        <div class="description">Coming Soon</div>
+
+                        <div class="description">A versatile calculator website featuring a simple calculator, BMI
+                            calculator, length, temperature, and weight converter for easy and accurate calculations.
+                        </div>
+
+                        <a href="https://github.com/Netai-2024" class="btn" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+                
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+        <!-- =========================== Certification Section =========================== -->
+
+        <section id="certification">
+            <h1>Certifications</h1>
+          
+            <div class="certificate-container">
+
+
+             <!-- ======================== Certificate 1: AI & ML Certificate IIT Kharagpur =========================== -->
+              <div class="certificate-card" data-aos="slide-right">
+                <div class="certificate-image">
+                  <img src="Static/IIT_Kharagpur_AIML_Netai_Jana.jpeg" alt="AI & ML Certificate IIT Kharagpur">
+                </div>
+                <div class="certificate-title">AI & ML Program – TCS iON (Certified by IIT Kharagpur)</div>
+                <button class="view-btn" 
+                    data-url="https://www.tcsion.com/iDH/user/credential/view/1016-719475f8-a689-11ef-86b9-005056b47784" 
+                    onclick="showModalAndRedirect(this)">View Certification
+                </button>
+              </div>
+
+
+              <!-- ======================== Certificate 2: Standford University ML Certification =========================== -->          
+              <div class="certificate-card" data-aos="slide-down">
+                <div class="certificate-image">
+                  <img src="Static/Machine Learning Standford University.jpeg" alt="Standford University ML Certification">
+                </div>
+                <div class="certificate-title">Machine Learning Specialisation – Coursera (Certified by STANDFORD UNIVERSITY)</div>
+                <button class="view-btn" 
+                    data-url="https://coursera.org/share/1087bb331b3d58c14def76666445546b" 
+                    onclick="showModalAndRedirect(this)">View Certification
+                </button>
+              </div>
+
+
+              <!-- ======================== Certificate 3: Project Review Paper Publication Certificate =========================== -->
+              <div class="certificate-card" data-aos="slide-left">
+                <div class="certificate-image">
+                  <img src="Static/Project Resherch Paper Publication Certificate.jpeg" alt="Project Review Paper Publication Certificate">
+                </div>
+                <div class="certificate-title">Project Review Paper Publication – IJRAR (Certified by IJRAR)</div>
+                <button class="view-btn" onclick="openModal('Static/Project Resherch Paper Publication Certificate.jpeg')">View Certification</button>
+              </div>
+
+
+              <!-- =========================== Certificate 4: Software Architecture Certificate =========================== -->          
+              <div class="certificate-card" data-aos="slide-right">
+                <div class="certificate-image">
+                  <img src="Static/Software Architecture.jpg" alt="Software Architecture Certificate">
+                </div>
+                <div class="certificate-title">Software Architecture – Udemy (Certified by Udemy)</div>
+                <button class="view-btn" 
+                    data-url="https://www.udemy.com/certificate/UC-5d810470-5442-4f40-be89-2233d0b351b4/" 
+                    onclick="showModalAndRedirect(this)">View Certification
+                </button>
+              </div>
+
+
+              <!-- =========================== Certificate 5: Web Development Certificate =========================== -->
+              <div class="certificate-card" data-aos="slide-up">
+                <div class="certificate-image">
+                  <img src="Static/Web-Development Bootcamp.jpg" alt="Web Development Certificate">
+                </div>
+                <div class="certificate-title">Web Development Bootcamp – Udemy (Certified by Udemy)</div>
+                <button class="view-btn" 
+                    data-url="https://www.udemy.com/certificate/UC-d8b6d2b1-5fc3-47a6-8738-30a52b0c632f/" 
+                    onclick="showModalAndRedirect(this)">View Certification
+                </button>
+              </div>
+
+
+              <!-- ======================== Certificate 6: Soft Skills Certificate =========================== -->
+              <div class="certificate-card" data-aos="slide-left">
+                <div class="certificate-image">
+                  <img src="Static/Soft Skill Development.jpg" alt="Soft Skills Certificate">
+                </div>
+                <div class="certificate-title">Soft Skills Program – NPTEL (Certified by IIT Kharagpur)</div>
+                <button class="view-btn" onclick="openModal('Static/Soft Skill Development.jpg')">View Certification</button>
+              </div>
+
+
+            </div>
+          </section>
+          
+
+
+          <!-- ==================== Modal for viewing certificate ===========================-->
+          <div id="certificateModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <iframe id="certificateFrame" style="width: 100%; height: 100%; display: none;" frameborder="0"></iframe>
+            <img id="certificateImage" style="max-width: 100%; max-height: 100%; margin: auto; display: none;" />
+          </div>        
+
+
+          <!-- ==================== Redirect Modal ===========================-->
+          <div id="redirectModal" class="modal">
+            <div class="modal-content">
+                <div class="certificate-spinner">
+                🏆
+                </div>
+                <p id="loadingText" class="loading-message">Authenticating Certificate</p>
+            </div>
+            </div>
+
+
+
+            
+
+
+
+        <!-- =========================== Contact Section =========================== -->
+
+        <section id="contact" data-aos="zoom-in">
+            <!-- <h1>Contact</h1> -->
+            <div class="form">
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+
+                    <h3 class="title">Let's get in touch</h3>
+                    <p class="text">
+                        Feel free to get in touch with me for any queries or collaborations. I'm eager to connect!
+                    </p>
+
+                    <div class="info">
+                        <div class="information">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <p>Dongal, Hooghly, West Bengal</p>
+                        </div>
+                        <div class="information">
+                            <i class="fas fa-envelope"></i>
+                            <p>netaij922@gmail.com</p>
+                        </div>
+                        <div class="information">
+                            <i class="fas fa-phone-alt"></i>
+                            <p>9339051132</p>
+                        </div>
+                    </div>
+
+
+                    
+                    <!-- Social Media Links -->
+
+                    <div class="social-media">
+                        <p>Connect with me :</p>
+
+                        <div class="social-media-btn">
+
+                            <a href="https://www.facebook.com/share/166grUmgXH/?mibextid=qi2Omg">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <span>Facebook</span>
+                            </a>
+
+                            <a href="https://www.instagram.com/netai.jana.9480?igsh=Z3VrMmd3NjlrMW0y">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+
+                            <a href="https://in.linkedin.com/in/netai-jana-4baa92256">
+                                <i class="fa-brands fa-youtube"></i>
+                                <span>Youtube</span>
+                            </a>
+
+                            <a
+                                href="http://www.linkedin.com/in/netai-jana-4baa92256">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                <span>Linkedin</span>
+                            </a>                          
+
+                            <a href="https://github.com/Netai-2024">
+                                <i class="fa-brands fa-github"></i>
+                                <span>Github</span>
+                            </a>
+
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=netaij922@gmail.com" title="Compose email">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>Gmail</span>
+                            </a>                              
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                
+                <!-- Contact Form -->
+
+                <div class="contact-form">
+                    <span class="circle one"></span>
+                    <span class="circle two"></span>
+
+                    <form action="index.html" autocomplete="off">
+                        <h3 class="title">Contact me</h3>
+
+                        <div class="input-container">
+                            <input type="text" name="name" class="input" placeholder=" " required>
+                            <label for="name">Username</label>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="email" name="email" class="input" placeholder=" " required>
+                            <label for="email">Email</label>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="tel" name="phone" class="input" placeholder=" " required>
+                            <label for="phone">Phone</label>
+                        </div>
+
+                        <div class="input-container textarea">
+                            <textarea name="message" class="input" placeholder=" " required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+
+                        <input type="submit" value="Send" class="contact-btn" />
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================== Footer =========================== -->
+
+        <footer class="footer-container">
+            <div class="footer-content">
+                <p>&copy; 2025 Netai Jana. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart heart-icon"></i> Designed by Lord Netai Jana</p>
+            </div>
+        </footer>
+        
+
+
+    </div>
+
+
+
+
+
+
+
+<!-- =========================== Scripts =========================== -->
+
+    <!-- Card Tilt Effect -->
+    <script src="vanilla-tilt.js"></script>
+    <!-- Type Effect in Home section -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Adding my javascript file -->
+    <script src="script.js"></script>
+    <!-- scroll animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,
+            duration: 700,
+        });
+    </script>
+</body>
+
+</html>
+
+
